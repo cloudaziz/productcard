@@ -16,15 +16,49 @@
 			"source": "html",
 			"selector": "p"
 		},
-		"alignment":{
-			"type":"string",
-			"default": "none"
-		},
 		"discount":{
 			"type":"string",
 			"source": "html",
 			"selector": "p"
-		}
+		},
+		"price":{
+			"type":"string",
+			"source": "html",
+			"selector": "p"
+		},
+		"arivaldate":{
+			"type":"string",
+			"source": "html",
+			"selector": "p"
+		},
+		
+		"alignment":{
+			"type":"string",
+			"default": "none"
+		},
+		"titlecolor":{
+			"type": "string",
+			"default": "black"
+
+		},
+
+		"url":{
+			"type":"string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "src"
+		},
+		"title":{
+			"type":"string"
+		},
+		"size":{
+			"type": "array",
+			"enum": ["large", "small"]
+		},
+		"backgroundImage":{
+			"type": "string",
+			"default": "null"
+		}	
 	},
 	"textdomain": "productcard",
 	"editorScript": "file:./index.js",
