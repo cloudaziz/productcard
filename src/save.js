@@ -20,10 +20,11 @@ export default function save({ attributes }) {
 				</p>
 				{/* <div className="arivalDate">Arived in Dec 27</div> */}
 				<div className="imageArea">
-					<img
+					<img src={backgroundImage} alt="" />
+					{/* <img
 						src="https://images.timberland.com/is/image/timberland/A1J1N230-HERO?$496x496$"
 						alt=""
-					/>
+					/> */}
 				</div>
 				<p className="discount">{attributes.discount}</p>
 
@@ -39,7 +40,6 @@ export default function save({ attributes }) {
 					<span className="cercle green"></span>
 					<span className="cercle blue"></span>
 				</div>
-				<img src={attributes.url} alt="" />
 			</div>
 		</div>
 	);

@@ -67,15 +67,15 @@ export default function Edit({ attributes, setAttributes }) {
 					<p>
 						<strong>Select a Background Image:</strong>
 					</p>
-					<MediaPlaceholder
+					<MediaUpload
 						onSelect={onSelectImage}
 						type="image"
 						value={backgroundImage}
-						render={({ open }) => {
+						render={({ open }) => (
 							<IconButton onClick={open} icon="upload">
 								Background Image
-							</IconButton>;
-						}}
+							</IconButton>
+						)}
 					/>
 				</PanelBody>
 			</InspectorControls>
@@ -125,6 +125,7 @@ export default function Edit({ attributes, setAttributes }) {
 				<RichText
 					tagName="p"
 					className="itemPrice"
+					style={{ textAlign: attributes.alignment }}
 					onChange={onChangePrice}
 					value={attributes.price}
 					placeholder={__("$50")}
